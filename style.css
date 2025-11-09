@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tahoma", Arial, sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+}
+
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav{
+        display: none;
+    }
+}
+
+:root{
+    --main-orange: orange
+}
+
+body{
+    height: 100svh;
+    width: 100svw;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header h1{
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    text-transform: capitalize;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .nav-menu li {
+    margin-right: 1rem;
+  }
+  
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  main{
+    height: 80%;
+  }
+
+.hero {
+    height: 100%;
+    background-image: url(./Photo/1.png);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.668);
+    color: #ffffff;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+button{
+    color: #ffffff;
+    background-color: var(--main-orange);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--main-orange);
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: black;
+    transform: scale(0.9);
+}
+
+.recipes{
+    min-height: 70%;
+    text-align: center;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipes p{
+    color: gray;
+    font-size: 15px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    border: 3px solid var(--main-orange);
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-body p{
+    font-size: 13px;
+}
+
+.Chefs{
+    background-color: #f6f6f6;
+    min-height: 70%;
+    text-align: center;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Chefs p{
+    color: gray;
+    font-size: 14px;
+}
+
+.cards2{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card2{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.505) 2px 2px 10px;
+    width: 420px;
+}
+
+.card2 img{
+    width: 100%;
+    height: 250px;
+    object-position: center;
+}
+
+.card-body2{
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.card-body2 p{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-body2 pre{
+    color: rgb(255, 149, 0);
+}
+
+.Contact{
+    background-color: #f6f6f6;
+    min-height: 85%;
+    text-align: center;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Contact p{
+    color: rgb(46, 45, 45);
+    font-size: 14px;
+}
+
+.cards3{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card3{
+    background-color: #ffffff;
+    box-shadow: rgba(54, 53, 53, 0.085) 0px 0px 10px;
+    height: 90%;
+    width: 800px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.card-body3 form{
+    background-color: #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 17px;
+}
+
+.card-body3 input, .card-body3 textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.b1{
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer pre{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
